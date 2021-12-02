@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Financial_Luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find out how lucky you are financially" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wiq-jc-OgO">
+                                <rect key="frame" x="30" y="337.5" width="354" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqm-Qt-6Cw">
+                                <rect key="frame" x="30" y="423" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.53350752283894587" green="0.71184643578938589" blue="0.95209616789999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ovt-C0-hr8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Click Here and Discover">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handlerButtonDiscover:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ApQ-W1-ewC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.87918694158954047" green="0.96175380700062785" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fqm-Qt-6Cw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BGb-s8-B6u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wiq-jc-OgO" secondAttribute="trailing" constant="30" id="BpN-Pt-2Lo"/>
+                            <constraint firstItem="Wiq-jc-OgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="FjY-4z-n34"/>
+                            <constraint firstItem="fqm-Qt-6Cw" firstAttribute="top" secondItem="Wiq-jc-OgO" secondAttribute="bottom" constant="60" id="QDX-pr-T7o"/>
+                            <constraint firstItem="fqm-Qt-6Cw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cEw-R9-FzM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fqm-Qt-6Cw" secondAttribute="trailing" constant="30" id="rMG-gI-vo5"/>
+                            <constraint firstItem="fqm-Qt-6Cw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uqO-Gb-jy0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uE5-Ge-RpY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="69.642857142857139"/>
+        </scene>
+        <!--Rich View Controller-->
+        <scene sceneID="ShX-80-ZjG">
+            <objects>
+                <viewController storyboardIdentifier="richViewController" id="z2Y-jC-AXF" customClass="RichViewController" customModule="Financial_Luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cz9-kY-45A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rich" translatesAutoresizingMaskIntoConstraints="NO" id="mzG-6u-Jgs">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="JVn-qb-KWT"/>
+                                    <constraint firstAttribute="height" constant="250" id="tkh-3u-abL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I managed to save a lot of money 💰" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1b-rf-qYa">
+                                <rect key="frame" x="60.5" y="94" width="293" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Rich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6Q-Ms-1nD">
+                                <rect key="frame" x="158.5" y="146" width="97" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-O2-gXZ">
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Dtd-Ma-Sju"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Try Again">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handlerButtonTryAgain:" destination="z2Y-jC-AXF" eventType="touchUpInside" id="Qsw-l7-uzb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IRV-uv-eYF"/>
+                        <color key="backgroundColor" red="0.96848052740097046" green="0.94984460963377582" blue="0.6857828495843703" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="IRV-uv-eYF" firstAttribute="trailing" secondItem="ffQ-O2-gXZ" secondAttribute="trailing" constant="30" id="0B9-fs-uep"/>
+                            <constraint firstItem="IRV-uv-eYF" firstAttribute="bottom" secondItem="ffQ-O2-gXZ" secondAttribute="bottom" constant="30" id="9hN-0L-CXu"/>
+                            <constraint firstItem="b6Q-Ms-1nD" firstAttribute="centerX" secondItem="Cz9-kY-45A" secondAttribute="centerX" id="AaW-dT-fXN"/>
+                            <constraint firstItem="b6Q-Ms-1nD" firstAttribute="top" secondItem="n1b-rf-qYa" secondAttribute="bottom" constant="30" id="Bxj-8e-oFM"/>
+                            <constraint firstItem="mzG-6u-Jgs" firstAttribute="centerX" secondItem="Cz9-kY-45A" secondAttribute="centerX" id="Eir-j0-ZzD"/>
+                            <constraint firstItem="mzG-6u-Jgs" firstAttribute="centerY" secondItem="Cz9-kY-45A" secondAttribute="centerY" id="X0a-5n-0hk"/>
+                            <constraint firstItem="ffQ-O2-gXZ" firstAttribute="leading" secondItem="IRV-uv-eYF" secondAttribute="leading" constant="30" id="duG-z3-M0n"/>
+                            <constraint firstItem="n1b-rf-qYa" firstAttribute="top" secondItem="IRV-uv-eYF" secondAttribute="top" constant="50" id="jXI-VY-bZm"/>
+                            <constraint firstItem="n1b-rf-qYa" firstAttribute="centerX" secondItem="Cz9-kY-45A" secondAttribute="centerX" id="tpk-Ns-h0U"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2dC-2u-TZM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="70"/>
+        </scene>
+        <!--Poor View Controller-->
+        <scene sceneID="umx-Jq-R8Y">
+            <objects>
+                <viewController storyboardIdentifier="poorViewController" id="1Wg-Tr-yw5" customClass="PoorViewController" customModule="Financial_Luck" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0WI-Yh-9nG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't Ask Me For Money 💸 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgO-a0-0KE">
+                                <rect key="frame" x="91.5" y="94" width="231" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQg-rB-gfs">
+                                <rect key="frame" x="157.5" y="146" width="99" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poor" translatesAutoresizingMaskIntoConstraints="NO" id="dZJ-lS-fSJ">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="O7c-IX-S69"/>
+                                    <constraint firstAttribute="width" constant="250" id="wti-zA-pqE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-9i-Zok">
+                                <rect key="frame" x="30" y="782" width="354" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hVa-Xh-wkl"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Try Again">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handlerButtonTryAgain:" destination="1Wg-Tr-yw5" eventType="touchUpInside" id="BRu-Q7-viI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iHu-ia-qBU"/>
+                        <color key="backgroundColor" red="0.89109660821547887" green="1" blue="0.8823172553515658" alpha="0.98999999999999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="tgO-a0-0KE" firstAttribute="top" secondItem="iHu-ia-qBU" secondAttribute="top" constant="50" id="71Z-nR-j3F"/>
+                            <constraint firstItem="xQg-rB-gfs" firstAttribute="centerX" secondItem="0WI-Yh-9nG" secondAttribute="centerX" id="F5f-dY-mjS"/>
+                            <constraint firstItem="iHu-ia-qBU" firstAttribute="trailing" secondItem="UTb-9i-Zok" secondAttribute="trailing" constant="30" id="X6Q-We-XuY"/>
+                            <constraint firstItem="dZJ-lS-fSJ" firstAttribute="centerX" secondItem="0WI-Yh-9nG" secondAttribute="centerX" id="bMd-ef-pzT"/>
+                            <constraint firstItem="UTb-9i-Zok" firstAttribute="leading" secondItem="iHu-ia-qBU" secondAttribute="leading" constant="30" id="dNC-qO-AqZ"/>
+                            <constraint firstItem="tgO-a0-0KE" firstAttribute="centerX" secondItem="0WI-Yh-9nG" secondAttribute="centerX" id="ogh-eY-LN8"/>
+                            <constraint firstItem="xQg-rB-gfs" firstAttribute="top" secondItem="tgO-a0-0KE" secondAttribute="bottom" constant="30" id="qxT-Ki-cdf"/>
+                            <constraint firstItem="dZJ-lS-fSJ" firstAttribute="centerY" secondItem="0WI-Yh-9nG" secondAttribute="centerY" id="uFC-Lq-KoI"/>
+                            <constraint firstItem="iHu-ia-qBU" firstAttribute="bottom" secondItem="UTb-9i-Zok" secondAttribute="bottom" constant="30" id="ugN-Tt-4hH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p6w-fF-fBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1485.5072463768117" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="poor" width="561" height="782"/>
+        <image name="rich" width="470" height="783"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
